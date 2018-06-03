@@ -365,6 +365,10 @@
 								<a href="javascript:void(0)">FAQ
 								</a>
 							</li>
+							<li class="dap-dropdown-link separator" id="dap-launch-tour">
+								<a href="javascript:void(0)">SocioProphet Help
+								</a>
+							</li>
 						</ul>
 					</div>
 					<div class="dap-dropdown-container dap-manage-container" id="dap-manage">
@@ -391,6 +395,16 @@
 										<a href="https://console.bluemix.net/iam/#/users" target="cloud-console">Search...
 										</a>
 									</li>
+									<li class="dap-dropdown-link">
+										<a href="https://console.bluemix.net/account/resource-groups?accountId=7d78ea1497b0be3b9acd634038c0c5db" id="dap-manage-resource-groups" target="cloud-console">Publish / Share Data
+										</a>
+									</li>
+
+									<li class="dap-dropdown-link">
+										<a href="https://console.bluemix.net/account/resource-groups?accountId=7d78ea1497b0be3b9acd634038c0c5db" id="dap-manage-resource-groups" target="cloud-console">User Data
+										</a>
+									</li>
+									
 									<li class="dap-dropdown-link">
 										<a href="https://console.bluemix.net/account/manage-orgs?accountId=7d78ea1497b0be3b9acd634038c0c5db" id="dap-manage-orgs" target="cloud-console">Public Data
 										</a>
@@ -736,19 +750,13 @@
 	
 </header>
 
-	<script type="text/javascript">!function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="3.1.0";analytics.load("1iyTirPMAfhrMqGoewxUXeopq4qqje6j");analytics.page("Offering Interface", {category: "Offering Interface",productTitle: "Watson Studio",region: "us-south"});var _segmentIdentifyObj = {name: "michael heller",email: ""};if (typeof(digitalData) !== "undefined" && digitalData.user && digitalData.user.profile && digitalData.user.profile.uuid) {_segmentIdentifyObj.uuid = digitalData.user.profile.uuid;}if (typeof(utag) !== "undefined" && utag.data && utag.data["cp.CoreID6"]) {_segmentIdentifyObj.coremetricsId = utag.data["cp.CoreID6"].split("&")[0];}var profileRealmname = "";var iamId = "IBMid-310002HRVJ";var iamIdArray = iamId.split("-");var uniqueSecurityName;var productTitle = "wdp";if (Array.isArray(iamIdArray) && iamIdArray.length > 1) {uniqueSecurityName = iamIdArray[1];}if (productTitle) {_segmentIdentifyObj.productTitle = productTitle.toUpperCase();}_segmentIdentifyObj.productId = "5737-C49";_segmentIdentifyObj.realmName = "IBMid";_segmentIdentifyObj.uniqueSecurityName = uniqueSecurityName;analytics.identify(iamId, _segmentIdentifyObj);}}();
-	</script>
+
 	<script type="text/javascript">(function() {function _getProductTitle(context) {return "Watson Studio";}if (window.analytics) {var DATA_ATTR_PREFIX = "[data-analytics-action]";var LHS_NODE = document.getElementById("dap-side-menu");if (LHS_NODE !== null) {var NAV_ITEMS = [].slice.call(LHS_NODE.querySelectorAll(DATA_ATTR_PREFIX));function recordClick() {var context = "wdp";var productTitle = _getProductTitle(context);window.analytics.track("navigation", {action: "click",category: productTitle,element_type: "button",location_on_ui: "lhs panel",title: this.dataset.analyticsTitle,id: this.dataset.analyticsTitle,status: "complete",productId: "5737-C49",productTitle: productTitle});}NAV_ITEMS.forEach(function(item) {item.addEventListener("click", recordClick.bind(item));});}var ACTION_BAR_NODE = document.getElementById("dap-action-bar");if (ACTION_BAR_NODE !== null) {function createClickRecorder(idPrefix, titlePrefix) {return function() {var action = this.dataset.action;var type = this.dataset.type ? this.dataset.type : "button";var id = idPrefix + action.split("-").join("_");var title = titlePrefix + action.split("-").join(" ");var context = "wdp";var productTitle = _getProductTitle(context);window.analytics.track("navigation", {action: "click",category: productTitle,element_type: type,location_on_ui: "action-bar",title: title,id: id,status: "complete",productId: "5737-C49",productTitle: productTitle});}}var ACTION_ITEMS = [].slice.call(ACTION_BAR_NODE.querySelectorAll(".dap-action-bar_actions-container [data-action]"));ACTION_ITEMS.forEach(function(item) {item.addEventListener("click", createClickRecorder("", "").bind(item));});var RHS_ITEMS = [].slice.call(ACTION_BAR_NODE.querySelectorAll(".dap-action-bar_rhs-actions-container [data-action]"));RHS_ITEMS.forEach(function(item) {item.addEventListener("click", createClickRecorder("rhs_", "RHS ").bind(item));});}}})();
 	</script>
-	<script type="text/javascript">window.accountId = "7d78ea1497b0be3b9acd634038c0c5db";window.userId = "";
-	</script>
-	<script type="text/javascript">window.dsxNotificationsApi="https://api.dataplatform.ibm.com";window.dsxApiProxy="/api/proxy";window.dsxWebSocket="";window.dsxWebSocketHost="";
-	</script>
 
-	<script type="text/javascript">window.requestToken="3c0104cd-62aa-48ab-9782-b71f7e0561a2";window.requestUser="IBMid-310002HRVJ";
-	</script>
-	<script src="/socket.io/socket.io.js">
-	</script>
+
+
+
 
 
 
